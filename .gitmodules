@@ -1,0 +1,9 @@
+[submodule "WellClear"]
+	path = WellClear
+	url = https://github.com/nasa/WellClear.git
+[submodule "DAA-Analysis-Tool"]
+	path = DAA-Analysis-Tool
+	url = https://github.com/daviesj2/DAA-Analysis-Tools.git
+[submodule "DAA-Displays"]
+	path = DAA-Displays
+	url = https://github.com/nasa/daa-displays.git
