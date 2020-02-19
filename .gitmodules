@@ -7,3 +7,9 @@
 [submodule "DAA-Displays"]
 	path = DAA-Displays
 	url = https://github.com/nasa/daa-displays.git
+[submodule "3D_PathPlanner"]
+	path = 3D_PathPlanner
+	url = https://github.com/DavidLining/3D_PathPlanner.git
+[submodule "PythonRobotics"]
+	path = PythonRobotics
+	url = https://github.com/AtsushiSakai/PythonRobotics.git
