@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Tests/CMakeLib/PseudoMemcheck/NoLog/ret0.c
+

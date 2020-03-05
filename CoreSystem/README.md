@@ -28,12 +28,16 @@
 └── setup.py                         
 ```
 
+To give permission to setup.sh
+`chmod +x setup.sh`
+
+
 ## Installing CMAKE:
 
 Uninstall the default version provided by Ubuntu’s package manager:
 `sudo apt-get purge cmake`
 Go to the official CMake webpage, then download and extract the latest version. Update the version and build variables in the following command to get the desired version:
-`version=3.x`
+`version=3.16`
 `build=3`
 `mkdir ~/temp`
 `cd ~/temp`

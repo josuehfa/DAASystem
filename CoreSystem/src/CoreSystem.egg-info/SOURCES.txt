@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/CoreSystem.egg-info/PKG-INFO
+src/CoreSystem.egg-info/SOURCES.txt
+src/CoreSystem.egg-info/dependency_links.txt
+src/CoreSystem.egg-info/not-zip-safe
+src/CoreSystem.egg-info/top_level.txt
+src/py_src/__init__.py
+src/py_src/triangulate4.py
+src/wrapper/__init__.py

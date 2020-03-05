@@ -2,6 +2,7 @@
 
 #include <boost/lexical_cast.hpp>
 
+/*
 #include <CGAL/Exact_predicates_inexact_constructions_kernel.h>
 #include <CGAL/Constrained_Delaunay_triangulation_2.h>
 #include <CGAL/Delaunay_mesh_face_base_2.h>
@@ -277,3 +278,4 @@ PYBIND11_MODULE(cgal_mesher, m)
     );
 
 }
+*/

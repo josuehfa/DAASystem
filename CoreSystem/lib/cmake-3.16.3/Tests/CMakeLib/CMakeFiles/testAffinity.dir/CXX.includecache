@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Tests/CMakeLib/testAffinity.cxx
+cstddef
+-
+iostream
+-
+set
+-
+cmAffinity.h
+/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Tests/CMakeLib/cmAffinity.h
+
+Source/cmAffinity.h
+cmConfigure.h
+Source/cmConfigure.h
+cstddef
+-
+set
+-
+
+Source/cmConfigure.h
+cmsys/Configure.hxx
+Source/cmsys/Configure.hxx
+
+Source/cmsys/Configure.h
+
+Source/cmsys/Configure.hxx
+cmsys/Configure.h
+-
+
