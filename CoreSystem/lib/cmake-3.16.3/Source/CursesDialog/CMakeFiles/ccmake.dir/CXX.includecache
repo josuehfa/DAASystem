@@ -36,16 +36,6 @@ cmSystemTools.h
 cmake.h
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmake.h
 
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesBoolWidget.cxx
-cmCursesBoolWidget.h
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesBoolWidget.h
-string
--
-cmCursesWidget.h
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesWidget.h
-cmStateTypes.h
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmStateTypes.h
-
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesBoolWidget.h
 cmConfigure.h
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmConfigure.h
@@ -96,14 +86,6 @@ memory
 string
 -
 
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesDummyWidget.cxx
-cmCursesDummyWidget.h
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesDummyWidget.h
-cmCursesWidget.h
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesWidget.h
-cmStateTypes.h
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmStateTypes.h
-
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesDummyWidget.h
 cmConfigure.h
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmConfigure.h
@@ -112,23 +94,11 @@ cmCursesStandardIncludes.h
 cmCursesWidget.h
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesWidget.h
 
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesFilePathWidget.cxx
-cmCursesFilePathWidget.h
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesFilePathWidget.h
-cmCursesPathWidget.h
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesPathWidget.h
-cmStateTypes.h
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmStateTypes.h
-
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesFilePathWidget.h
 cmConfigure.h
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmConfigure.h
 cmCursesPathWidget.h
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesPathWidget.h
-
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesForm.cxx
-cmCursesForm.h
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesForm.h
 
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesForm.h
 cmConfigure.h
@@ -139,12 +109,6 @@ cmsys/FStream.hxx
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmsys/FStream.hxx
 cmCursesStandardIncludes.h
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesStandardIncludes.h
-
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesLabelWidget.cxx
-cmCursesLabelWidget.h
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesLabelWidget.h
-cmCursesWidget.h
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesWidget.h
 
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesLabelWidget.h
 cmConfigure.h
@@ -246,14 +210,6 @@ cmCursesStandardIncludes.h
 cmStateTypes.h
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmStateTypes.h
 
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesOptionsWidget.cxx
-cmCursesOptionsWidget.h
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesOptionsWidget.h
-cmCursesWidget.h
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesWidget.h
-cmStateTypes.h
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmStateTypes.h
-
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesOptionsWidget.h
 cmConfigure.h
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmConfigure.h
@@ -298,22 +254,6 @@ sys/time.h
 form.h
 -
 
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesStringWidget.cxx
-cmCursesStringWidget.h
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesStringWidget.h
-cstdio
--
-cmCursesForm.h
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesForm.h
-cmCursesMainForm.h
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesMainForm.h
-cmCursesStandardIncludes.h
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesStandardIncludes.h
-cmCursesWidget.h
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesWidget.h
-cmStateTypes.h
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmStateTypes.h
-
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesStringWidget.h
 cmConfigure.h
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmConfigure.h
@@ -321,10 +261,6 @@ string
 -
 cmCursesStandardIncludes.h
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesStandardIncludes.h
-cmCursesWidget.h
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesWidget.h
-
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesWidget.cxx
 cmCursesWidget.h
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/CursesDialog/cmCursesWidget.h
 

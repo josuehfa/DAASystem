@@ -16,16 +16,6 @@
 stdio.h
 -
 
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/kwsys/cmsysTestsC.c
-ctype.h
--
-stdio.h
--
-stdlib.h
--
-string.h
--
-
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Source/kwsys/kwsysPrivate.h
 cmsys/Directory.hxx
 -

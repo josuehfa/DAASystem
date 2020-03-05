@@ -13,7 +13,6 @@ echo "-----  Installing CMake  -----"
 cd "/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3"
 sudo make install
 
-
 echo "-----  Start Setup.py File -----"
 cd  "/home/ubuntu/environment/DAASystem/CoreSystem"
 python setup.py develop

@@ -290,6 +290,12 @@ PYTHON_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpython2.7.so
 USE_PYTHON_INCLUDE_DIR:BOOL=OFF
 
 //Value Computed by CMake
+daidalus_BINARY_DIR:STATIC=/home/ubuntu/environment/DAASystem/CoreSystem/build/temp.linux-x86_64-2.7/lib/daidalus
+
+//Value Computed by CMake
+daidalus_SOURCE_DIR:STATIC=/home/ubuntu/environment/DAASystem/CoreSystem/lib/daidalus
+
+//Value Computed by CMake
 pybind11_BINARY_DIR:STATIC=/home/ubuntu/environment/DAASystem/CoreSystem/build/temp.linux-x86_64-2.7/lib/pybind11
 
 //Value Computed by CMake
@@ -434,7 +440,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

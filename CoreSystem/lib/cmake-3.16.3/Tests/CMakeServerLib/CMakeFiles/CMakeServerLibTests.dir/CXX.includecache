@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Tests/CMakeServerLib/CMakeServerLibTests.cxx
-ctype.h
--
-stdio.h
--
-stdlib.h
--
-string.h
--
-
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Tests/CMakeServerLib/testServerBuffering.cpp
 iostream
 -

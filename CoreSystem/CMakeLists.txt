@@ -24,7 +24,7 @@ project(CoreSystem)
 set(SOURCE_DIR "src/wrapper")
 include_directories(${SOURCE_DIR})
 
-
+add_subdirectory(lib/daidalus)
 add_subdirectory(lib/pybind11)
 pybind11_add_module(CoreSystem ${SOURCES} "${SOURCE_DIR}/daidalus_wrapper.cpp")
 
