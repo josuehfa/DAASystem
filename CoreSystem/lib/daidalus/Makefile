@@ -1,9 +1,9 @@
 # Simple Makefile to build DAIDALUS library and example applications
 
 SRC0   = $(wildcard src/*.cpp)
-SRC1   = $(SRC0:src/DaidalusExample.cpp=)
-SRC2   = $(SRC1:src/DaidalusAlerting.cpp=)
-SRCS   = $(SRC2:src/DaidalusBatch.cpp=)
+SRC1   = $(SRC0:example/DaidalusExample.cpp=)
+SRC2   = $(SRC1:example/DaidalusAlerting.cpp=)
+SRCS   = $(SRC2:example/DaidalusBatch.cpp=)
 OBJS   = $(SRCS:.cpp=.o)
 INCLUDEFLAGS = -Iinclude 
 CXXFLAGS = $(INCLUDEFLAGS) -Wall -O 
@@ -19,9 +19,9 @@ lib: $(OBJS)
 examples:
 	@echo
 	@echo "** Building example applications"
-	$(CXX) -o DaidalusExample $(CXXFLAGS) src/DaidalusExample.cpp lib/DAIDALUS.a
-	$(CXX) -o DaidalusAlerting $(CXXFLAGS) src/DaidalusAlerting.cpp lib/DAIDALUS.a
-	$(CXX) -o DaidalusBatch $(CXXFLAGS) src/DaidalusBatch.cpp lib/DAIDALUS.a
+	$(CXX) -o DaidalusExample $(CXXFLAGS) example/DaidalusExample.cpp lib/DAIDALUS.a
+	$(CXX) -o DaidalusAlerting $(CXXFLAGS) example/DaidalusAlerting.cpp lib/DAIDALUS.a
+	$(CXX) -o DaidalusBatch $(CXXFLAGS) example/DaidalusBatch.cpp lib/DAIDALUS.a
 	@echo "** To run DaidalusExample type:"
 	@echo "./DaidalusExample"
 	@echo "** To run DaidalusAlerting type, e.g.,"

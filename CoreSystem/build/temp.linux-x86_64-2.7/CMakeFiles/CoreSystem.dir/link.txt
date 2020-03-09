@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -DVERSION_INFO=\"0.1\" -O3 -DNDEBUG  -shared  -o ../../src/wrapper/CoreSystem.so CMakeFiles/CoreSystem.dir/src/wrapper/daidalus_wrapper.cpp.o  -flto 

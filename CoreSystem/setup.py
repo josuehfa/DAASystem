@@ -70,11 +70,10 @@ setup(
     version='0.1',
     author='Josue H. F. Andrade',
     author_email='josuehfa@gmail.com',
-    description='Control of a UAS trajectory using Daidalus system',
+    description='Daidalus System inside python',
     long_description='',
     packages=find_packages('src'),
     package_dir={'':'src'},
-    ext_modules=[CMakeExtension('wrapper/daidalus_wrapper')], # Add new extension if need to create more wrappers
+    ext_modules=[CMakeExtension('daidalus')],
     cmdclass=dict(build_ext=CMakeBuild),
-    zip_safe=False,
-)
+    zip_safe=False,)

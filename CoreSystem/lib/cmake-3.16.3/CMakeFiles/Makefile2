@@ -292,6 +292,7 @@ Tests/all: Tests/CMakeServerLib/all
 Tests/all: Tests/CMakeOnly/all
 Tests/all: Tests/RunCMake/all
 Tests/all: Tests/FindPackageModeMakefileTest/all
+Tests/all: Tests/Qt5Autogen/all
 Tests/all: Tests/FindThreads/all
 Tests/all: Tests/CMakeTests/all
 
@@ -303,6 +304,7 @@ Tests/preinstall: Tests/CMakeServerLib/preinstall
 Tests/preinstall: Tests/CMakeOnly/preinstall
 Tests/preinstall: Tests/RunCMake/preinstall
 Tests/preinstall: Tests/FindPackageModeMakefileTest/preinstall
+Tests/preinstall: Tests/Qt5Autogen/preinstall
 Tests/preinstall: Tests/FindThreads/preinstall
 Tests/preinstall: Tests/CMakeTests/preinstall
 
@@ -314,6 +316,7 @@ Tests/clean: Tests/CMakeServerLib/clean
 Tests/clean: Tests/CMakeOnly/clean
 Tests/clean: Tests/RunCMake/clean
 Tests/clean: Tests/FindPackageModeMakefileTest/clean
+Tests/clean: Tests/Qt5Autogen/clean
 Tests/clean: Tests/FindThreads/clean
 Tests/clean: Tests/CMakeTests/clean
 
@@ -484,6 +487,24 @@ Tests/FindThreads/preinstall:
 Tests/FindThreads/clean:
 
 .PHONY : Tests/FindThreads/clean
+
+#=============================================================================
+# Directory level rules for directory Tests/Qt5Autogen
+
+# Recursive "all" directory target.
+Tests/Qt5Autogen/all:
+
+.PHONY : Tests/Qt5Autogen/all
+
+# Recursive "preinstall" directory target.
+Tests/Qt5Autogen/preinstall:
+
+.PHONY : Tests/Qt5Autogen/preinstall
+
+# Recursive "clean" directory target.
+Tests/Qt5Autogen/clean:
+
+.PHONY : Tests/Qt5Autogen/clean
 
 #=============================================================================
 # Directory level rules for directory Tests/RunCMake

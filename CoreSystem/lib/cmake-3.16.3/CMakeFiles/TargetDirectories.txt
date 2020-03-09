@@ -361,6 +361,15 @@
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Tests/FindPackageModeMakefileTest/CMakeFiles/install/local.dir
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Tests/FindPackageModeMakefileTest/CMakeFiles/test.dir
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Tests/FindPackageModeMakefileTest/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Tests/Qt5Autogen/CMakeFiles/install/strip.dir
+/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Tests/Qt5Autogen/CMakeFiles/install.dir
+/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Tests/Qt5Autogen/CMakeFiles/package_source.dir
+/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Tests/Qt5Autogen/CMakeFiles/package.dir
+/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Tests/Qt5Autogen/CMakeFiles/install/local.dir
+/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Tests/Qt5Autogen/CMakeFiles/test.dir
+/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Tests/Qt5Autogen/CMakeFiles/list_install_components.dir
+/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Tests/Qt5Autogen/CMakeFiles/edit_cache.dir
+/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Tests/Qt5Autogen/CMakeFiles/rebuild_cache.dir
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Tests/FindThreads/CMakeFiles/install/strip.dir
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Tests/FindThreads/CMakeFiles/install.dir
 /home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Tests/FindThreads/CMakeFiles/package_source.dir

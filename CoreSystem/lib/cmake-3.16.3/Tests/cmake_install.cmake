@@ -64,6 +64,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Tests/Qt5Autogen/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/home/ubuntu/environment/DAASystem/CoreSystem/lib/cmake-3.16.3/Tests/FindThreads/cmake_install.cmake")
 endif()
 

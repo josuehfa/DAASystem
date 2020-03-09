@@ -601,10 +601,13 @@ PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python
 QT_QMAKE_EXECUTABLE:FILEPATH=NOTFOUND
 
 //The directory containing a CMake configuration file for Qt5Core.
-Qt5Core_DIR:PATH=Qt5Core_DIR-NOTFOUND
+Qt5Core_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Core
+
+//The directory containing a CMake configuration file for Qt5Gui.
+Qt5Gui_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui
 
 //The directory containing a CMake configuration file for Qt5Widgets.
-Qt5Widgets_DIR:PATH=Qt5Widgets_DIR-NOTFOUND
+Qt5Widgets_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets
 
 //Path to a file.
 RANDOM_FILE:FILEPATH=/dev/urandom
@@ -613,10 +616,10 @@ RANDOM_FILE:FILEPATH=/dev/urandom
 READELF_EXECUTABLE:FILEPATH=/usr/bin/readelf
 
 //Path to a program.
-RPMBUILD_EXECUTABLE:FILEPATH=RPMBUILD_EXECUTABLE-NOTFOUND
+RPMBUILD_EXECUTABLE:FILEPATH=/usr/bin/rpmbuild
 
 //Path to a program.
-RPM_EXECUTABLE:FILEPATH=RPM_EXECUTABLE-NOTFOUND
+RPM_EXECUTABLE:FILEPATH=/usr/bin/rpm
 
 //Path to a program.
 SDCC_EXECUTABLE:FILEPATH=SDCC_EXECUTABLE-NOTFOUND
@@ -631,7 +634,7 @@ SLURM_SBATCH_COMMAND:FILEPATH=SLURM_SBATCH_COMMAND-NOTFOUND
 SLURM_SRUN_COMMAND:FILEPATH=SLURM_SRUN_COMMAND-NOTFOUND
 
 //Sphinx Documentation Builder (sphinx-doc.org)
-SPHINX_EXECUTABLE:FILEPATH=SPHINX_EXECUTABLE-NOTFOUND
+SPHINX_EXECUTABLE:FILEPATH=/usr/bin/sphinx-build
 
 //Flags to pass to sphinx-build
 SPHINX_FLAGS:STRING=
@@ -915,7 +918,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=35
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=36
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -39,7 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ubuntu/environment/DAASystem/CoreSystem/build/temp.linux-x86_64-2.7/lib/daidalus/cmake_install.cmake")
   include("/home/ubuntu/environment/DAASystem/CoreSystem/build/temp.linux-x86_64-2.7/lib/pybind11/cmake_install.cmake")
 
 endif()

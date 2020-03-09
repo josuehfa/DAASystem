@@ -19,9 +19,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -56,42 +53,21 @@ CMAKE_BINARY_DIR = /home/ubuntu/environment/DAASystem/CoreSystem/build/temp.linu
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/CoreSystem.dir/all
-all: lib/daidalus/all
+all: CMakeFiles/daidalus.dir/all
 all: lib/pybind11/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: lib/daidalus/preinstall
 preinstall: lib/pybind11/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/CoreSystem.dir/clean
-clean: lib/daidalus/clean
+clean: CMakeFiles/daidalus.dir/clean
 clean: lib/pybind11/clean
 
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory lib/daidalus
-
-# Recursive "all" directory target.
-lib/daidalus/all:
-
-.PHONY : lib/daidalus/all
-
-# Recursive "preinstall" directory target.
-lib/daidalus/preinstall:
-
-.PHONY : lib/daidalus/preinstall
-
-# Recursive "clean" directory target.
-lib/daidalus/clean:
-
-.PHONY : lib/daidalus/clean
 
 #=============================================================================
 # Directory level rules for directory lib/pybind11
@@ -112,31 +88,31 @@ lib/pybind11/clean:
 .PHONY : lib/pybind11/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/CoreSystem.dir
+# Target rules for target CMakeFiles/daidalus.dir
 
 # All Build rule for target.
-CMakeFiles/CoreSystem.dir/all:
-	$(MAKE) -f CMakeFiles/CoreSystem.dir/build.make CMakeFiles/CoreSystem.dir/depend
-	$(MAKE) -f CMakeFiles/CoreSystem.dir/build.make CMakeFiles/CoreSystem.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/environment/DAASystem/CoreSystem/build/temp.linux-x86_64-2.7/CMakeFiles --progress-num=1,2 "Built target CoreSystem"
-.PHONY : CMakeFiles/CoreSystem.dir/all
+CMakeFiles/daidalus.dir/all:
+	$(MAKE) -f CMakeFiles/daidalus.dir/build.make CMakeFiles/daidalus.dir/depend
+	$(MAKE) -f CMakeFiles/daidalus.dir/build.make CMakeFiles/daidalus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/environment/DAASystem/CoreSystem/build/temp.linux-x86_64-2.7/CMakeFiles --progress-num=1,2 "Built target daidalus"
+.PHONY : CMakeFiles/daidalus.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/CoreSystem.dir/rule: cmake_check_build_system
+CMakeFiles/daidalus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/environment/DAASystem/CoreSystem/build/temp.linux-x86_64-2.7/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/CoreSystem.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/daidalus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/environment/DAASystem/CoreSystem/build/temp.linux-x86_64-2.7/CMakeFiles 0
-.PHONY : CMakeFiles/CoreSystem.dir/rule
+.PHONY : CMakeFiles/daidalus.dir/rule
 
 # Convenience name for target.
-CoreSystem: CMakeFiles/CoreSystem.dir/rule
+daidalus: CMakeFiles/daidalus.dir/rule
 
-.PHONY : CoreSystem
+.PHONY : daidalus
 
 # clean rule for target.
-CMakeFiles/CoreSystem.dir/clean:
-	$(MAKE) -f CMakeFiles/CoreSystem.dir/build.make CMakeFiles/CoreSystem.dir/clean
-.PHONY : CMakeFiles/CoreSystem.dir/clean
+CMakeFiles/daidalus.dir/clean:
+	$(MAKE) -f CMakeFiles/daidalus.dir/build.make CMakeFiles/daidalus.dir/clean
+.PHONY : CMakeFiles/daidalus.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

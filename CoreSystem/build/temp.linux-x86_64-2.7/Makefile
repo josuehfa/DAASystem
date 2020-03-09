@@ -23,9 +23,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -72,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/local/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -114,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named CoreSystem
+# Target rules for targets named daidalus
 
 # Build rule for target.
-CoreSystem: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 CoreSystem
-.PHONY : CoreSystem
+daidalus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 daidalus
+.PHONY : daidalus
 
 # fast build rule for target.
-CoreSystem/fast:
-	$(MAKE) -f CMakeFiles/CoreSystem.dir/build.make CMakeFiles/CoreSystem.dir/build
-.PHONY : CoreSystem/fast
+daidalus/fast:
+	$(MAKE) -f CMakeFiles/daidalus.dir/build.make CMakeFiles/daidalus.dir/build
+.PHONY : daidalus/fast
 
-src/wrapper/daidalus_wrapper.o: src/wrapper/daidalus_wrapper.cpp.o
+src/wrapper/daidalus.o: src/wrapper/daidalus.cpp.o
 
-.PHONY : src/wrapper/daidalus_wrapper.o
+.PHONY : src/wrapper/daidalus.o
 
 # target to build an object file
-src/wrapper/daidalus_wrapper.cpp.o:
-	$(MAKE) -f CMakeFiles/CoreSystem.dir/build.make CMakeFiles/CoreSystem.dir/src/wrapper/daidalus_wrapper.cpp.o
-.PHONY : src/wrapper/daidalus_wrapper.cpp.o
+src/wrapper/daidalus.cpp.o:
+	$(MAKE) -f CMakeFiles/daidalus.dir/build.make CMakeFiles/daidalus.dir/src/wrapper/daidalus.cpp.o
+.PHONY : src/wrapper/daidalus.cpp.o
 
-src/wrapper/daidalus_wrapper.i: src/wrapper/daidalus_wrapper.cpp.i
+src/wrapper/daidalus.i: src/wrapper/daidalus.cpp.i
 
-.PHONY : src/wrapper/daidalus_wrapper.i
+.PHONY : src/wrapper/daidalus.i
 
 # target to preprocess a source file
-src/wrapper/daidalus_wrapper.cpp.i:
-	$(MAKE) -f CMakeFiles/CoreSystem.dir/build.make CMakeFiles/CoreSystem.dir/src/wrapper/daidalus_wrapper.cpp.i
-.PHONY : src/wrapper/daidalus_wrapper.cpp.i
+src/wrapper/daidalus.cpp.i:
+	$(MAKE) -f CMakeFiles/daidalus.dir/build.make CMakeFiles/daidalus.dir/src/wrapper/daidalus.cpp.i
+.PHONY : src/wrapper/daidalus.cpp.i
 
-src/wrapper/daidalus_wrapper.s: src/wrapper/daidalus_wrapper.cpp.s
+src/wrapper/daidalus.s: src/wrapper/daidalus.cpp.s
 
-.PHONY : src/wrapper/daidalus_wrapper.s
+.PHONY : src/wrapper/daidalus.s
 
 # target to generate assembly for a file
-src/wrapper/daidalus_wrapper.cpp.s:
-	$(MAKE) -f CMakeFiles/CoreSystem.dir/build.make CMakeFiles/CoreSystem.dir/src/wrapper/daidalus_wrapper.cpp.s
-.PHONY : src/wrapper/daidalus_wrapper.cpp.s
+src/wrapper/daidalus.cpp.s:
+	$(MAKE) -f CMakeFiles/daidalus.dir/build.make CMakeFiles/daidalus.dir/src/wrapper/daidalus.cpp.s
+.PHONY : src/wrapper/daidalus.cpp.s
 
 # Help Target
 help:
@@ -160,11 +157,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... CoreSystem"
+	@echo "... daidalus"
 	@echo "... edit_cache"
-	@echo "... src/wrapper/daidalus_wrapper.o"
-	@echo "... src/wrapper/daidalus_wrapper.i"
-	@echo "... src/wrapper/daidalus_wrapper.s"
+	@echo "... src/wrapper/daidalus.o"
+	@echo "... src/wrapper/daidalus.i"
+	@echo "... src/wrapper/daidalus.s"
 .PHONY : help
 
 
