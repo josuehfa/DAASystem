@@ -74,6 +74,6 @@ setup(
     long_description='',
     packages=find_packages('src'),
     package_dir={'':'src'},
-    ext_modules=[CMakeExtension('daidalus')],
+    ext_modules=[CMakeExtension('daidalus_wrapper')],
     cmdclass=dict(build_ext=CMakeBuild),
     zip_safe=False,)
