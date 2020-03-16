@@ -2,8 +2,11 @@
 from daidalus_wrapper import ConstrainedDelaunayTriangulation as CDT
 from daidalus_wrapper import Point
 from daidalus_wrapper import Daidalus
-#from daidalus_wrapper import Position 
-#from daidalus_wrapper import Veocity 
+from daidalus_wrapper import Units
+from daidalus_wrapper import LatLonAlt
+from daidalus_wrapper import Position 
+from daidalus_wrapper import Velocity 
+import daidalus_wrapper as DWrapper
 
 
 def main():
@@ -75,38 +78,58 @@ def main():
 
     daa = Daidalus()
     daa.set_Buffered_WC_SC_228_MOPS(True)
-    print("Number of Aircraft: " + str(daa.numberOfAircraft()) )
-#   parameters = "parameters.txt"
-#   daa.parameters.saveToFile(parameters)
+    print("Number of Aircraft: " + str(daa.numberOfAircraft()))
 
-#   so = Position.makeLatLonAlt(33.95,"deg", -96.7,"deg", 8700.0,"ft")
-#	vo = Velocity.makeTrkGsVs(206.0,"deg", 151.0,"knot", 0.0,"fpm")
-#	daa.setOwnshipState("ownship",so,vo,t)
+    unit = Units()
+
+    unit_from = unit.from_unit('deg',21)
+    print ("Unit Test:" + str(unit_from))
+
+    latlon = LatLonAlt()
+    latlon = latlon.make(21,"deg", 21,"deg", 8700.0,"ft")
+    print ("Lat:" + str(latlon.lat()))
+    print ("Lon:" + str(latlon.lon()))
+    print ("Alt:" + str(latlon.alt()))
+    print ("latitude:" + str(latlon.latitude()))
     
-#   Position si = Position::makeLatLonAlt(33.86191658,"deg", -96.73272601,"deg", 9000.0,"ft");
-#	Velocity vi = Velocity::makeTrkGsVs(0.0,"deg", 210.0,"knot", 0,"fpm");
-#	daa.addTrafficState("ith-intruder",si,vi);
+    time = 0
+    so = Position.makeLatLonAlt(33.95,"deg", -96.7,"deg", 8700.0,"ft")
+    vo = Velocity.makeTrkGsVs(206.0,"deg", 151.0,"knot", 0.0,"fpm")
+    daa.setOwnshipState("ownship",so,vo,time)
+    print("Position Ownship:" + so.toStringUnits())
+    print("Velocity Ownship:" + vo.toStringNP())
 
-#   Velocity wind = Velocity::makeTrkGsVs(45,"deg", 10,"knot", 0,"fpm");
-#	daa.setWindField(wind);
+    si = Position.makeLatLonAlt(33.86191658,"deg", -96.73272601,"deg", 9000.0,"ft")
+    vi = Velocity.makeTrkGsVs(0.0,"deg", 210.0,"knot", 0,"fpm")
+    daa.addTrafficState("ith-intruder",si,vi)
+    print("Position Intruder:" + si.toStringUnits())
+    print("Velocity Intruder:" + vi.toStringNP())
 
-#   std::cout << daa.toString() << std::endl; 
+    wind = Velocity.makeTrkGsVs(45,"deg", 10,"knot", 0,"fpm")
+    daa.setWindField(wind)
 
-#   std::cout << "Number of Aircraft: " << daa.numberOfAircraft() << std::endl;
-#	std::cout << "Last Aircraft Index: " << daa.lastTrafficIndex() << std::endl;
-#   printDetection(daa);
+    print(daa.toString())
+    print("Number of Aircraft: " + str(daa.numberOfAircraft()))
+    print("Last Aircraft Index: " + str(daa.lastTrafficIndex()))
 
-#   void printDetection(Daidalus& daa) {
-#       // Aircraft at index 0 is ownship
-#       for (int ac_idx=1; ac_idx <= daa.lastTrafficIndex(); ++ac_idx) {
-#           double t2los = daa.timeToViolation(ac_idx);
-#           if (t2los >= 0) {
-#               std::cout << "Predicted Time to Loss of Well Clear with " << daa.getAircraftState(ac_idx).getId() << ": " <<
-#                       Fm2(t2los) << " [s]" << std::endl;
-#           }
-#       }
-#   }
+    def printDetection(daa):
+        # Aircraft at index 0 is ownship
+        for ac_idx in range (0, daa.lastTrafficIndex()+1 ):
+            t2los = daa.timeToViolation(ac_idx)
+            if (t2los >= 0):
+			    print("Predicted Time to Loss of Well Clear with " + str(daa.getAircraftState(ac_idx).getId()) + ": " + DWrapper.Fm2(t2los) + " [s]")
+	
+    def printAlerts(daa):
+	    #Aircraft at index 0 is ownship
+	    for ac_idx in range (0, daa.lastTrafficIndex() + 1):
+		    alert = daa.alerting(ac_idx)
+		    if (alert > 0):
+			    print( "Alert Level " + str(alert) + " with " +	daa.getAircraftState(ac_idx).getId())
 
+
+    printDetection(daa)
+    printAlerts(daa)
+	
 
 
 

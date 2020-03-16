@@ -323,7 +323,7 @@ public:
 	 */
 	const Position linearEst(const Velocity& vo, double time) const;
 
-//	const std::pair<Position,Velocity> linearDist2D(const Velocity& v, double d) const;
+  //	const std::pair<Position,Velocity> linearDist2D(const Velocity& v, double d) const;
 
 	const std::pair<Position,Velocity> linearDist2D(double track, double d, double gsAt_d) const;
 

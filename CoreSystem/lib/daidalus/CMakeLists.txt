@@ -18,11 +18,11 @@ file(GLOB SOURCES "src/*.cpp")
 
 add_library(daidalus SHARED ${SOURCES})
 
-#set(SRC_Example ${SOURCES} "example/DaidalusExample.cpp")
-#add_executable(DaidalusExample ${SRC_Example})
+set(SRC_Example ${SOURCES} "example/DaidalusExample.cpp")
+add_executable(DaidalusExample ${SRC_Example})
 
-#set(SRC_Alerting ${SOURCES} "example/DaidalusAlerting.cpp")
-#add_executable(DaidalusAlerting ${SRC_Alerting})
+set(SRC_Alerting ${SOURCES} "example/DaidalusAlerting.cpp")
+add_executable(DaidalusAlerting ${SRC_Alerting})
 
-#set(SRC_Batch ${SOURCES} "example/DaidalusBatch.cpp")
-#add_executable(DaidalusBatch ${SRC_Batch})
+set(SRC_Batch ${SOURCES} "example/DaidalusBatch.cpp")
+add_executable(DaidalusBatch ${SRC_Batch})

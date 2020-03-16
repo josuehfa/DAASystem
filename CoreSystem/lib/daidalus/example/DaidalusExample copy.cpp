@@ -37,8 +37,6 @@ REMEDY FOR ANY SUCH MATTER SHALL BE THE IMMEDIATE, UNILATERAL
 TERMINATION OF THIS AGREEMENT.
  **/
 
-#include <stdio.h>      /* printf, NULL */
-#include <stdlib.h>     /* strtod */
 #include "Daidalus.h"
 
 using namespace larcfm;
@@ -225,77 +223,53 @@ int main(int argc, char* argv[]) {
 	Daidalus daa;
 
 	// A Daidalus object can be configured either programatically or by using a configuration file.
-	// for (int a=1;a < argc; ++a) {
-	// 	std::string arga = argv[a];
-	// 	if (arga == "--noma" || arga == "-noma") {
-	// 		// Configure DAIDALUS to nominal A parameters: Kinematic Bands, Turn Rate 1.5 [deg/s])
-	// 		daa.set_Buffered_WC_SC_228_MOPS(false);
-	// 	} else if (arga == "--nomb" || arga == "-nomb") {
-	// 		// Configure DAIDALUS to nominal B parameters: Kinematic Bands, Turn Rate 3.0 [deg/s])
-	// 		daa.set_Buffered_WC_SC_228_MOPS(true);
-	// 	} else if ((startsWith(arga,"--c") || startsWith(arga,"-c")) && a+1 < argc) {
-	// 		// Load configuration file
-	// 		arga = argv[++a];
-	// 		if (!daa.parameters.loadFromFile(arga)) {
-	// 			std::cerr << "File " << arga << "not found" << std::endl;
-	// 			exit(0);
-	// 		} else {
-	// 			std::cout << "Loading configuration file " << arga << std::endl;
-	// 		}
-	// 	} else if (startsWith(arga,"--h") || startsWith(arga,"-h")) {
-	// 		std::cerr << "Options: [--noma | --nomb | --conf <configuration file> | --help]" << std::endl;
-	// 		exit(0);
-	// 	} else {
-	// 		std::cerr << "Unknown option " << arga << std::endl;
-	// 		exit(0);
-	// 	}
-	// }
-	std::cout << "test";
+	for (int a=1;a < argc; ++a) {
+		std::string arga = argv[a];
+		if (arga == "--noma" || arga == "-noma") {
+			// Configure DAIDALUS to nominal A parameters: Kinematic Bands, Turn Rate 1.5 [deg/s])
+			daa.set_Buffered_WC_SC_228_MOPS(false);
+		} else if (arga == "--nomb" || arga == "-nomb") {
+			// Configure DAIDALUS to nominal B parameters: Kinematic Bands, Turn Rate 3.0 [deg/s])
+			daa.set_Buffered_WC_SC_228_MOPS(true);
+		} else if ((startsWith(arga,"--c") || startsWith(arga,"-c")) && a+1 < argc) {
+			// Load configuration file
+			arga = argv[++a];
+			if (!daa.parameters.loadFromFile(arga)) {
+				std::cerr << "File " << arga << "not found" << std::endl;
+				exit(0);
+			} else {
+				std::cout << "Loading configuration file " << arga << std::endl;
+			}
+		} else if (startsWith(arga,"--h") || startsWith(arga,"-h")) {
+			std::cerr << "Options: [--noma | --nomb | --conf <configuration file> | --help]" << std::endl;
+			exit(0);
+		} else {
+			std::cerr << "Unknown option " << arga << std::endl;
+			exit(0);
+		}
+	}
+
 	// Save current parameters
 	std::string parameters = "parameters.txt";
 	daa.parameters.saveToFile(parameters);
 	std::cout << "Current parameters written to file " << parameters << std::endl << std::endl;
 
 	double t = 0.0;
-
-	double lat_own = 0.0;
-	double lon_own = 0.0;
-	double lat_in = 0.0;
-	double lon_in = 0.0;
-	lat_own = strtod(argv[1], NULL);
-	lon_own = strtod(argv[2],NULL);
-	lat_in = strtod(argv[3],NULL);
-	lon_in = strtod(argv[4],NULL);
-
-	std::cout << lat_own << lon_own << lat_in << lon_in;
-
-
-
 	// for all times t (in this example, only one time step is illustrated)
 	// Add ownship state at time t
-	// Position so = Position::makeLatLonAlt(33.95,"deg", -96.7,"deg", 8700.0,"ft");
-	// Velocity vo = Velocity::makeTrkGsVs(206.0,"deg", 151.0,"knot", 0.0,"fpm");
-	// daa.setOwnshipState("ownship",so,vo,t);
-
-	// // Add all traffic states at time t
-	// // ... some traffic ...
-	// Position si = Position::makeLatLonAlt(33.86191658,"deg", -96.73272601,"deg", 9000.0,"ft");
-	// Velocity vi = Velocity::makeTrkGsVs(0.0,"deg", 210.0,"knot", 0,"fpm");
-	// daa.addTrafficState("ith-intruder",si,vi);
-	// // ... more traffic ...
-
-	Position so = Position::makeLatLonAlt(lat_own,"deg", lon_own,"deg", 8700.0,"ft");
+	Position so = Position::makeLatLonAlt(33.95,"deg", -96.7,"deg", 8700.0,"ft");
 	Velocity vo = Velocity::makeTrkGsVs(206.0,"deg", 151.0,"knot", 0.0,"fpm");
 	daa.setOwnshipState("ownship",so,vo,t);
 
 	// Add all traffic states at time t
 	// ... some traffic ...
-	Position si = Position::makeLatLonAlt(lat_in,"deg", lon_in,"deg", 8700.0,"ft");
-	Velocity vi = Velocity::makeTrkGsVs(200.0,"deg", 210.0,"knot", 0,"fpm");
+	Position si = Position::makeLatLonAlt(33.86191658,"deg", -96.73272601,"deg", 9000.0,"ft");
+	Velocity vi = Velocity::makeTrkGsVs(0.0,"deg", 210.0,"knot", 0,"fpm");
 	daa.addTrafficState("ith-intruder",si,vi);
+	// ... more traffic ...
 
 	// Set wind information
-	Velocity wind = Velocity::makeTrkGsVs(45,"deg", 1,"knot", 0,"fpm");
+	Velocity wind = Velocity::makeTrkGsVs(45,"deg", 10,"knot", 0,"fpm");
 	daa.setWindField(wind);
 
 	// Print Daidalus Object
